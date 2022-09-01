@@ -18,6 +18,7 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
         stage.centerOnScreen();
+        System.out.println("lol");
     }
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
