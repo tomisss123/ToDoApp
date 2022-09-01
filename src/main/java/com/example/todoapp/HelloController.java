@@ -21,12 +21,6 @@ public class HelloController {
 
     }
 
-    @FXML
-    protected void FunnyButtonGoHaHa() throws FileNotFoundException, UnsupportedEncodingException {
-        zaklecie.main();
-        launch();
-
-    }
 
     @FXML
     protected void onHelloButtonClick() {
