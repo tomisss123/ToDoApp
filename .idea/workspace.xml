@@ -170,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662067967772</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commicik z dzialajacym tworzeniem stolow z nazwa podana przez gracza">
+      <created>1662068151595</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068151595</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commicik z dzialajacym tworzeniem stolow z nazwa podana przez gracza">
+      <created>1662068343572</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068343572</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
