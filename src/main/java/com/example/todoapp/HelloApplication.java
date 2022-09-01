@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 public class HelloApplication extends Application {
     @Override
@@ -18,8 +20,9 @@ public class HelloApplication extends Application {
         stage.centerOnScreen();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
         launch();
+        zaklecie.main();
     }
 
 }
