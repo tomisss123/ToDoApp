@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="dodane hashpass" />
+    <list default="true" id="3b0631eb-6afd-4b36-a99e-16090cecdda9" name="Changes" comment="lol" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +13,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.jdks/openjdk-18.0.2.1-1/lib/src.zip!/java.base/java/lang/RuntimeException.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
