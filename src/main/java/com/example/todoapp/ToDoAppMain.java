@@ -11,13 +11,26 @@ public class ToDoAppMain {
 
     public static void createTableUser(Connection connection) throws SQLException {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj login");
+        System.out.println("Podaj imię:");
+        String name = scanner.nextLine();
+        System.out.println("Podaj nazwisko:");
+        String surname = scanner.nextLine();
+        System.out.println("Podaj e-mail:");
+        String email = scanner.nextLine();
+        System.out.println("Podaj login:");
         String login = scanner.nextLine();
+        System.out.println("Podaj hasło:");
+        String password = scanner.nextLine();
+        System.out.println("id");
+        String id = scanner.nextLine();
 
 
         Statement statement = connection.createStatement();
         String mySql = "CREATE TABLE IF NOT EXISTS " + login + " ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, surname VARCHAR(255) NOT NULL, login VARCHAR(128) NOT NULL UNIQUE, password CHAR(60) NOT NULL, email VARCHAR(255) UNIQUE)" ;
+
         statement.executeUpdate(mySql);
+        String mySql2 = "INSERT INTO " + login + "(id, name, surname, login, password, email) VALUES(" + id + "," + name + "," + surname + "," + login + "," + password + "," + email + ")" ;
+        statement.executeUpdate(mySql2);
     }
 
     public static void main(String[] args) {
