@@ -4,14 +4,20 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 
 public class ToDoAppMain {
 
 
     public static void createTableUser(Connection connection) throws SQLException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj login");
+        String login = scanner.nextLine();
+
+
         Statement statement = connection.createStatement();
         String mySql = """
-                CREATE TABLE IF NOT EXISTS user_data(
+                CREATE TABLE IF NOT EXISTS login (
                  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                  name VARCHAR(128) NOT NULL,
                 surname VARCHAR(255) NOT NULL,
