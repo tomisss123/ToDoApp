@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class ToDoAppMain {
 
 
-    public static void createDatabase(Connection connection, String name) throws SQLException {
+    public static void createTableUser(Connection connection, String name) throws SQLException {
         Statement statement = connection.createStatement();
         String mySql = """
                 CREATE TABLE IF NOT EXISTS name(
