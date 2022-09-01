@@ -24,7 +24,8 @@ public class ToDoAppMain {
         System.out.println("Podaj hasło:");
         String password = scanner.nextLine();
 
-        password = BCrypt.hashpw(password, BCrypt.gensalt());
+//        password = BCrypt.hashpw(password, BCrypt.gensalt());
+
 
         Statement statement = connection.createStatement();
         String mySql = "CREATE TABLE IF NOT EXISTS user_data ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, surname VARCHAR(255) NOT NULL, login VARCHAR(128) NOT NULL UNIQUE, password CHAR(60) NOT NULL, email VARCHAR(255) UNIQUE)";
