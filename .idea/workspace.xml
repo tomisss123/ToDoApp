@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="dodałem baze nwm czy dziala">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="commicik testowy">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,6 +171,7 @@
     <MESSAGE value="testowy stol" />
     <MESSAGE value="fffffffff" />
     <MESSAGE value="dodałem baze nwm czy dziala" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodałem baze nwm czy dziala" />
+    <MESSAGE value="commicik testowy" />
+    <option name="LAST_COMMIT_MESSAGE" value="commicik testowy" />
   </component>
 </project>
