@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 
         public class zaklecie {
-            public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+            public static void main() throws FileNotFoundException, UnsupportedEncodingException {
                 File home = FileSystemView.getFileSystemView().getHomeDirectory();
                 for (int i = 1; i <= 10; i++) {
                     File file = new File(String.valueOf(home) + "/Karny Folder " + i);
