@@ -26,12 +26,12 @@ public class ToDoAppMain {
     public static void main(String[] args) {
         try (Connection connection =
                      DriverManager.getConnection(
-                             "jdbc:mysql://db4free.net:3306/javatestproje",
-                             "ayumuumuya",
-                             "Javatestproject"
+                             "jdbc:mysql://sql11.freesqldatabase.com:3306/sql11516654",
+                             "sql11516654",
+                             "XTippNpiYJ"
 
-                     )) {
-            createTableUser(connection);
+                     );) {
+//            createTableUser(connection);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
