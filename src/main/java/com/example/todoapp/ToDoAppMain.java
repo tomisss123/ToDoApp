@@ -31,7 +31,7 @@ public class ToDoAppMain {
                              "XTippNpiYJ"
 
                      );) {
-//            createTableUser(connection);
+            createTableUser(connection);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
