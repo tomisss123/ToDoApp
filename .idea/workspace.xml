@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="commicik z dzialajacym tworzeniem stolow z nazwa podana przez gracza" />
+    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="commicik z dzialajaca rejestracja uzytkownika">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662068620807</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commicik z dzialajaca rejestracja uzytkownika">
+      <created>1662068884371</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068884371</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +223,7 @@
     <MESSAGE value="dodałem baze nwm czy dziala" />
     <MESSAGE value="commicik testowy" />
     <MESSAGE value="commicik z dzialajacym tworzeniem stolow z nazwa podana przez gracza" />
-    <option name="LAST_COMMIT_MESSAGE" value="commicik z dzialajacym tworzeniem stolow z nazwa podana przez gracza" />
+    <MESSAGE value="commicik z dzialajaca rejestracja uzytkownika" />
+    <option name="LAST_COMMIT_MESSAGE" value="commicik z dzialajaca rejestracja uzytkownika" />
   </component>
 </project>
