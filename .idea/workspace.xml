@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="commicik z dzialajaca rejestracja uzytkownika">
+    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="jednak powrot do pojedynczych bo potrojne nie dzialaly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" afterDir="false" />
     </list>
@@ -199,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662068884371</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="zmiana cudzyslowow pojedynczych na potrojne">
+      <created>1662069467821</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1662069467821</updated>
+    </task>
+    <task id="LOCAL-00015" summary="jednak powrot do pojedynczych bo potrojne nie dzialaly">
+      <created>1662069614843</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662069614843</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +238,9 @@
     <MESSAGE value="commicik testowy" />
     <MESSAGE value="commicik z dzialajacym tworzeniem stolow z nazwa podana przez gracza" />
     <MESSAGE value="commicik z dzialajaca rejestracja uzytkownika" />
-    <option name="LAST_COMMIT_MESSAGE" value="commicik z dzialajaca rejestracja uzytkownika" />
+    <MESSAGE value="zmiana cudzyslowow pojedynczych na potrojne" />
+    <MESSAGE value="jednak powrot do potrojnych bo pojedyncze nie dzialaly" />
+    <MESSAGE value="jednak powrot do pojedynczych bo potrojne nie dzialaly" />
+    <option name="LAST_COMMIT_MESSAGE" value="jednak powrot do pojedynczych bo potrojne nie dzialaly" />
   </component>
 </project>
