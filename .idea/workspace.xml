@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="testowy stol">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todoapp/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="v3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +95,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commociki testowy" />
     <MESSAGE value="testowy stol" />
-    <option name="LAST_COMMIT_MESSAGE" value="testowy stol" />
+    <MESSAGE value="v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3" />
   </component>
 </project>
