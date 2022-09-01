@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="testowy stol">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todoapp/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="fffffffff" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,8 +29,8 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="ToDoAppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.todoapp.ToDoAppMain" />
+    <configuration name="Database" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.todoapp.Database" />
       <module name="ToDoApp" />
       <extension name="coverage">
         <pattern>
@@ -47,7 +44,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ToDoAppMain" />
+        <item itemvalue="Application.Database" />
       </list>
     </recent_temporary>
   </component>
@@ -74,14 +71,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662035676801</updated>
     </task>
-    <task id="LOCAL-00003" summary="testowy stol">
-      <created>1662035961260</created>
+    <task id="LOCAL-00003" summary="fffffffff">
+      <created>1662037050428</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1662035961260</updated>
+      <updated>1662037050428</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fffffffff">
+      <created>1662037082336</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662037082336</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commociki testowy" />
     <MESSAGE value="testowy stol" />
-    <option name="LAST_COMMIT_MESSAGE" value="testowy stol" />
+    <MESSAGE value="fffffffff" />
+    <option name="LAST_COMMIT_MESSAGE" value="fffffffff" />
   </component>
 </project>

@@ -22,7 +22,6 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
         launch();
-        zaklecie.main();
     }
 
 }
