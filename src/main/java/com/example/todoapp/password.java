@@ -1,5 +1,6 @@
 package com.example.todoapp;
 
+
 public class password {
     public static String secretMessage(String password) {
         if (password.equals("hasło")) {
@@ -8,5 +9,8 @@ public class password {
             System.out.println("Błędne hasło");
         }
         return password;
+
+
     }
+
 }
