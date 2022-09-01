@@ -1,5 +1,7 @@
 package com.example.todoapp;
 
+import org.mindrot.jbcrypt.BCrypt;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -22,12 +24,13 @@ public class ToDoAppMain {
         System.out.println("Podaj hasło:");
         String password = scanner.nextLine();
 
+        password = BCrypt.hashpw(password, BCrypt.gensalt());
 
         Statement statement = connection.createStatement();
-        String mySql = "CREATE TABLE IF NOT EXISTS user_data ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, surname VARCHAR(255) NOT NULL, login VARCHAR(128) NOT NULL UNIQUE, password CHAR(60) NOT NULL, email VARCHAR(255) UNIQUE)" ;
+        String mySql = "CREATE TABLE IF NOT EXISTS user_data ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, surname VARCHAR(255) NOT NULL, login VARCHAR(128) NOT NULL UNIQUE, password CHAR(60) NOT NULL, email VARCHAR(255) UNIQUE)";
 
         statement.executeUpdate(mySql);
-        String mySql2 = "INSERT INTO user_data (name, surname, login, password, email) VALUES('" + name + "','" + surname + "','" + login + "','" + password + "','" + email + "')" ;
+        String mySql2 = "INSERT INTO user_data (name, surname, login, password, email) VALUES('" + name + "','" + surname + "','" + login + "','" + password + "','" + email + "')";
         statement.executeUpdate(mySql2);
     }
 
