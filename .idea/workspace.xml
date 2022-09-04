@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b0631eb-6afd-4b36-a99e-16090cecdda9" name="Changes" comment="lol" />
+    <list default="true" id="3b0631eb-6afd-4b36-a99e-16090cecdda9" name="Changes" comment="lol">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_09_2022_00_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_09_2022_00_27__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-18.0.2.1-1/lib/src.zip!/java.base/java/lang/RuntimeException.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -98,12 +104,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9a1be20d-6342-4c8c-971f-7d896310f2cc" name="Changes" comment="" />
+      <changelist id="3b0631eb-6afd-4b36-a99e-16090cecdda9" name="Changes" comment="lol" />
       <created>1662027747103</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027747103</updated>
       <workItem from="1662053345224" duration="7803000" />
+      <workItem from="1662160471369" duration="1538000" />
+      <workItem from="1662318261620" duration="780000" />
     </task>
     <task id="LOCAL-00001" summary="commociki testowy">
       <created>1662035282331</created>
@@ -254,5 +262,16 @@
     <MESSAGE value="jednak powrot do pojedynczych bo potrojne nie dzialaly" />
     <MESSAGE value="dodane hashpass" />
     <option name="LAST_COMMIT_MESSAGE" value="dodane hashpass" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/todoapp/ToDoAppMain.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
