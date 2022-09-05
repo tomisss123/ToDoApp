@@ -42,12 +42,17 @@ public class ToDoAppMain {
             Statement statement = connection.createStatement();
             String sqlPassword = "SELECT password FROM user_data WHERE id = 1";
             ResultSet resultSet = statement.executeQuery(sqlPassword);
-            String password = resultSet.getString("password");
-            System.out.println(password);
+            if (resultSet != null && resultSet.next()){
+                System.out.println(resultSet.getString("password"));
+
+            }
+//            String password = resultSet.getString("password");
+//            System.out.println(password);
 //            System.out.println("Podaj login");
 //            String login = scanner.next();
 //            System.out.println("Podaj hasło");
         } catch (SQLException e) {
+            System.out.println(e);
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
 
