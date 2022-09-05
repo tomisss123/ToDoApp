@@ -2,6 +2,7 @@ package com.example.todoapp;
 
 import org.mindrot.jbcrypt.BCrypt;
 
+import java.awt.desktop.ScreenSleepEvent;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,7 +14,7 @@ public class ToDoAppMain {
 
     public static void createTableUser(Connection connection) throws SQLException {
         Statement statement = connection.createStatement();
-        String mySql = "CREATE TABLE IF NOT EXISTS user_data ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, surname VARCHAR(255) NOT NULL, login VARCHAR(128) NOT NULL UNIQUE, password CHAR(60) NOT NULL, email VARCHAR(255) UNIQUE)" ;
+        String mySql = "CREATE TABLE IF NOT EXISTS user_data ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, surname VARCHAR(255) NOT NULL, login VARCHAR(128) NOT NULL UNIQUE, password CHAR(60) NOT NULL, email VARCHAR(255) UNIQUE)";
         statement.executeUpdate(mySql);
 
         Scanner scanner = new Scanner(System.in);
@@ -32,19 +33,31 @@ public class ToDoAppMain {
             String password = scanner1.nextLine();
 
             password = BCrypt.hashpw(password, BCrypt.gensalt());
-            String mySql2 = "INSERT INTO user_data (name, surname, login, password, email) VALUES('" + name + "','" + surname + "','" + login + "','" + password + "','" + email + "')" ;
+            String mySql2 = "INSERT INTO user_data (name, surname, login, password, email) VALUES('" + name + "','" + surname + "','" + login + "','" + password + "','" + email + "')";
             statement.executeUpdate(mySql2);
 
             Statement statement1 = connection.createStatement();
-            String mySql3 = "CREATE TABLE IF NOT EXISTS " + login + " ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, description VARCHAR(1024))" ;
-            System.out.println("Podaj nazwę taska:");
-            Scanner scanner2 = new Scanner(System.in);
-            String taskName = scanner2.nextLine();
-            System.out.println("Podaj opis taska:");
-            String taskDescription = scanner2.nextLine();
-            statement1.executeUpdate(mySql3);
-            String mySql4 = "INSERT INTO " + login + "(name, description) VALUES('" + taskName + "','" + taskDescription + "')" ;
-            statement1.executeUpdate(mySql4);
+            String mySql3 = "CREATE TABLE IF NOT EXISTS " + login + " ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, description VARCHAR(1024))";
+            System.out.println("Rejestracja zakończona pomyślnie!");
+
+            int userChoice;
+            do {
+                System.out.println("Dodaj taska - 1\nZakoncz program - 3");
+                userChoice = scanner.nextInt();
+                if (userChoice == 1) {
+                    System.out.println("Podaj nazwę taska:");
+                    Scanner scanner2 = new Scanner(System.in);
+                    String taskName = scanner2.nextLine();
+                    System.out.println("Podaj opis taska:");
+                    Scanner scanner3 = new Scanner(System.in);
+                    String taskDescription = scanner3.nextLine();
+                    statement1.executeUpdate(mySql3);
+                    String mySql4 = "INSERT INTO " + login + "(name, description) VALUES('" + taskName + "','" + taskDescription + "')";
+                    statement1.executeUpdate(mySql4);
+                }
+            } while (userChoice != 3);
+
+
         }
 
 
