@@ -1,8 +1,6 @@
 package com.example.todoapp;
 
 import org.mindrot.jbcrypt.BCrypt;
-
-import java.awt.desktop.ScreenSleepEvent;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -19,18 +17,18 @@ public class ToDoAppMain {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Logowanie - 1\nRejestracja - 2");
-        if (scanner.nextInt() == 2) {
+        int choice = scanner.nextInt();
+        if (choice == 2) {
             System.out.println("Podaj imię:");
-            Scanner scanner1 = new Scanner(System.in);
-            String name = scanner1.nextLine();
+            String name = scanner.next();
             System.out.println("Podaj nazwisko:");
-            String surname = scanner1.nextLine();
+            String surname = scanner.next();
             System.out.println("Podaj e-mail:");
-            String email = scanner1.nextLine();
+            String email = scanner.next();
             System.out.println("Podaj login:");
-            String login = scanner1.nextLine();
+            String login = scanner.next();
             System.out.println("Podaj hasło:");
-            String password = scanner1.nextLine();
+            String password = scanner.next();
 
             password = BCrypt.hashpw(password, BCrypt.gensalt());
             String mySql2 = "INSERT INTO user_data (name, surname, login, password, email) VALUES('" + name + "','" + surname + "','" + login + "','" + password + "','" + email + "')";
@@ -58,6 +56,8 @@ public class ToDoAppMain {
             } while (userChoice != 3);
 
 
+        } else if (choice == 1) {
+            LoginToApp.Login();
         }
 
 
