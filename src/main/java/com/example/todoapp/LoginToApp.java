@@ -5,6 +5,16 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class LoginToApp {
+    private static String userLogin;
+
+    public LoginToApp(String userLogin) {
+    LoginToApp.userLogin = userLogin;
+    }
+
+    public static String getUserLogin() {
+        return userLogin;
+    }
+
     public static boolean Login() {
         Scanner scanner = new Scanner(System.in);
         boolean result = false;
@@ -13,7 +23,7 @@ public class LoginToApp {
                 "sql11516654",
                 "XTippNpiYJ");) {
             System.out.println("Podaj login");
-            String userLogin = scanner.next();
+             userLogin = scanner.next();
             System.out.println("Podaj hasło");
             String userPass = scanner.next();
 
@@ -28,11 +38,14 @@ public class LoginToApp {
            return result;
            }else {
                System.out.println("Błędne hasło");
+               result = false;
+               return result;
            }
-
             }
+
         } catch (SQLException e) {
         }
+        System.out.println(result);
         return result;
     }
 }
