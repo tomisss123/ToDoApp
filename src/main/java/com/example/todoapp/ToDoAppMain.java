@@ -12,8 +12,7 @@ import java.util.Scanner;
 public class ToDoAppMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int userChoice;
-        int userChoice1;
+
         try (Connection connection =
                      DriverManager.getConnection(
                              "jdbc:mysql://sql11.freesqldatabase.com:3306/sql11516654",
@@ -22,23 +21,29 @@ public class ToDoAppMain {
 
                      );) {
 
-            System.out.println("Logowanie - 1\nRejestracja - 2");
-            userChoice= scanner.nextInt();
-            if (userChoice == 2) {
-                RegisterToApp.Registration(connection);
 
-            } else if(userChoice==1) {
-                if(LoginToApp.Login()==true){
-                    TaskAdd.TaskAdder(connection);
+            int userChoice = 0;
+            int userChoice1;
+
+            while ((userChoice != 1 || userChoice != 2)) {
+                System.out.println("Logowanie - 1\nRejestracja - 2");
+                userChoice = scanner.nextInt();
+                if (userChoice == 2) {
+                    RegisterToApp.Registration(connection);
+
+                } else if (userChoice == 1) {
+                    if (LoginToApp.Login()) {
+                        TaskAdd.TaskAdder(connection);
+                    }
+
+                } else {
+                    System.out.println("Musisz wprowadzić '1' lub '2'");
                 }
 
-            }else{
-                System.out.println("Musisz wprowadzić '1' lub '2'");
             }
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } catch (InputMismatchException e) {
-            throw new RuntimeException("Musisz wprowadzić '1' lub '2'");
         }
     }
 }
