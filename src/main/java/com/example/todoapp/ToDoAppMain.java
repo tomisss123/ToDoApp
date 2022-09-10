@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ToDoAppMain {
@@ -20,6 +21,7 @@ public class ToDoAppMain {
                              "XTippNpiYJ"
 
                      );) {
+
             System.out.println("Logowanie - 1\nRejestracja - 2");
             userChoice= scanner.nextInt();
             if (userChoice == 2) {
@@ -30,9 +32,13 @@ public class ToDoAppMain {
                     TaskAdd.TaskAdder(connection);
                 }
 
+            }else{
+                System.out.println("Musisz wprowadzić '1' lub '2'");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        } catch (InputMismatchException e) {
+            throw new RuntimeException("Musisz wprowadzić '1' lub '2'");
         }
     }
 }

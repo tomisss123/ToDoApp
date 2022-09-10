@@ -19,7 +19,7 @@ public class TaskAdd extends LoginToApp {
         int userChoice;
 
         do {
-            System.out.println("Dodaj taska - 1\nWyjdź - 2");
+            System.out.println("Dodaj taska - 1\nPokaż taski - 2\nWyjdź - 3");
             userChoice = scanner.nextInt();
             if (userChoice == 1) {
                 String mySql = "CREATE TABLE IF NOT EXISTS " + getUserLogin() + " ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128) NOT NULL, description VARCHAR(1024))";
@@ -33,8 +33,10 @@ public class TaskAdd extends LoginToApp {
                 statement.executeUpdate(mySql);
                 String mySql4 = "INSERT INTO " + getUserLogin() + "(name, description) VALUES('" + taskName + "','" + taskDescription + "')";
                 statement.executeUpdate(mySql4);
+            } else if (userChoice == 2) {
+                TaskView.TaskViewer(connection);
             }
         }
-        while (userChoice != 2);
+        while (userChoice != 3);
     }
 }
